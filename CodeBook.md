@@ -1,12 +1,12 @@
 # Getting and Cleaning Data Course Project Code Book
 
-The following provides a description of the input and output files data sets used and the transformations applied.
+The following provides a description of the input and output files used and the transformations applied.
 
 ## Input Data sets
 
 [The input data can be downloaded here.](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-The following is a descption of the files used from the zip.
+The following is a description of the files used from the zip.
 
 Note: the field names were added as part of the tranformations applied.  See the tranformation section below.
 
@@ -14,12 +14,12 @@ Note: the field names were added as part of the tranformations applied.  See the
 
 activity_labels.txt - Links the class labels with their activity name.
 
-| Field Name   | Type   | Example                                 |
-| ------------ | ------ | --------------------------------------- |
-| activityId   | int    | See the Value column of the table below |
-| activityName | Factor | See the Name column of the table below  |
+| Field Name   | Type   | Example           |
+| ------------ | ------ | ----------------- |
+| activityId   | int    | 2                 |
+| activityName | Factor | WALKING_UPSTAIRS  |
 
-File values:
+Activity Label values:
 
 | Name               | Value | Description                                          |
 | ------------------ | ----- | ---------------------------------------------------- |
@@ -47,7 +47,7 @@ subject_train.txt, subject_test.txt - Each row identifies the subject who perfor
 | ------------ | ------ | ------------------|
 | subjectId    | int    | 1                 |
  
-### Activity Values Data Set
+### Activity Values Data Sets
 
 y_train.txt, y_test.txt - The Training and Test labels.
  
@@ -60,11 +60,11 @@ y_train.txt, y_test.txt - The Training and Test labels.
 X_train.txt, X_test.txt - The Training and Test sets.
 
 These data sets contain 561 numeric variables such as:
-. tBodyAcc-mean()-X e.g. 0.289
-. tBodyAcc-mean()-Y e.g. -0.0203
-. tBodyAcc-mean()-Z e.g. -0.133
-. tBodyAcc-std()-X  e.g. -0.995
-. etc
+* tBodyAcc-mean()-X e.g. 0.289
+* tBodyAcc-mean()-Y e.g. -0.0203
+* tBodyAcc-mean()-Z e.g. -0.133
+* tBodyAcc-std()-X  e.g. -0.995
+* etc
   
 ## Output Data Set
 
@@ -144,12 +144,12 @@ tidyData.txt - tidy data set with the average of each variable for each activity
 
 ## Transformations
 
-1. Each of the input data sets, as shown above, were labeled with descriptive variables
-..* the feature names were added to the feature values data sets
-..* activityId was added to the activity values data sets
-..* subjectId was added to the subject values data sets
-..* activityId and activityName was added to the activity labels data set
-..* featureId and featureName was added to the feature names data set
+1. Each of the input data sets were labeled with descriptive variables:
+  * the feature names were added to the feature values data sets
+  * activityId was added to the activity values data sets
+  * subjectId was added to the subject values data sets
+  * activityId and activityName was added to the activity labels data set
+  * featureId and featureName was added to the feature names data set
 
 2. The activity values, subject values and the feature values columns were merged for the training and test data sets respectively and then the rows merged together to create a single combined data set.
 
