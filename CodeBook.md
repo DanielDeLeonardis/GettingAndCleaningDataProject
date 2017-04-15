@@ -145,11 +145,11 @@ tidyData.txt - tidy data set with the average of each variable for each activity
 ## Transformations
 
 1. Each of the input data sets were labeled with descriptive variables:
-  * the feature names were added to the feature values data sets
-  * activityId was added to the activity values data sets
-  * subjectId was added to the subject values data sets
-  * activityId and activityName was added to the activity labels data set
-  * featureId and featureName was added to the feature names data set
+    * the feature names were added to the feature values data sets
+    * activityId was added to the activity values data sets
+    * subjectId was added to the subject values data sets
+    * activityId and activityName was added to the activity labels data set
+    * featureId and featureName was added to the feature names data set
 
 2. The activity values, subject values and the feature values columns were merged for the training and test data sets respectively and then the rows merged together to create a single combined data set.
 
